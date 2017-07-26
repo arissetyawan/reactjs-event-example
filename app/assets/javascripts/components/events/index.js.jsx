@@ -13,6 +13,7 @@ var EventTable = React.createClass({
             <th className="col-md-2">Date</th>
             <th className="col-md-3">Place</th>
             <th className="col-md-4">Description</th>
+            <th className="col-md-4" colspan='2'>Actions</th>
           </tr>
         </thead>
         <tbody>

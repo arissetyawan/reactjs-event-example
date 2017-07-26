@@ -5,6 +5,10 @@ var Event = React.createClass({
     place: React.PropTypes.string,
     description: React.PropTypes.string
   },
+  handleEdit: function(event) {
+    },
+  handleDelete: function(event) {
+    },
   render: function() {
     var event = this.props.event;
     return(
@@ -13,6 +17,8 @@ var Event = React.createClass({
         <td>{event.event_date}</td>
         <td>{event.place}</td>
         <td>{event.description}</td>
+        <td><EditEventLink handleEdit={this.handleEdit} value={event.id} /></td>
+        <td><DeleteEventLink DeleteEventLink={this.handleDelete} value= {event.id} /></td>
       </tr>
     )
   }
